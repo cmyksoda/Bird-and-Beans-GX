@@ -12,7 +12,7 @@ You’ll need the Homebrew Channel, an SD card, and your own **(USA)(EnFrEs)** D
 
 The app checks the ROM and prepares its data automatically on first launch. Later launches use the saved cache, so you're free to remove the ROM after first successful boot. Other regions and revisions aren’t supported.
 
-Cute Pyoro transition voices are included for the loading screens[^1]. :3
+Cute Pyoro transition voices are included for the loading[^1] screens. :3
 
 ## Controls
 
