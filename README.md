@@ -39,4 +39,4 @@ Basic play has been tested on Wii, with broader controller testing in Dolphin. P
 
 The port code and documentation are **GPLv3**. Nintendo game data and the included Pyoro recordings are excluded; third-party components retain their own licenses. See [license notices](licenses/README.md).
 
-[^1]: The loading screens aren't real loading screens, they're just cute little transitions. It felt odd to have the game instantly.
+[^1]: The loading screens aren't real loading screens, they're just cute little transitions. It felt odd to have the game start instantly.
