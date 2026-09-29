@@ -2,6 +2,11 @@
 
 A Wii homebrew port of **Bird & Beans / Pyoro**, with both games, original gameplay code, music and sound effects, and a new title screen and pause menu.
 
+|Title Screen|Pause Menu|Graphics Options|
+|---|---|---|
+|<img width="642" height="480" alt="LULZHB_2026-09-29_19-19-06" src="https://github.com/user-attachments/assets/6aaad610-d461-4b93-9e26-b12e5edf1287" />|<img width="642" height="480" alt="LULZHB_2026-09-29_19-19-23" src="https://github.com/user-attachments/assets/acf00735-e46d-49da-8637-02e759162e1b" />|<img width="642" height="480" alt="LULZHB_2026-09-29_19-19-43" src="https://github.com/user-attachments/assets/f5986e3a-d8e1-4a2e-8c4c-38ae77b4ec90" />|
+
+
 ## Install
 
 You’ll need the Homebrew Channel, an SD card, and your own **(USA)(EnFrEs)** DSiWare ROM.
