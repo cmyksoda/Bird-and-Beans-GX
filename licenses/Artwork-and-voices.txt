@@ -1,0 +1,8 @@
+Custom project logo: GPL-3.0-only. Created by me, Jaxi/cmyksoda.
+
+Pyoro voice recordings: Nintendo / Intelligent Systems, from WarioWare: Get It Together! These recordings are not covered by the port's GPLv3 license. No redistribution license from the copyright holders is asserted.
+
+The WAV collection was submitted by Mysticus to The Sounds Resource. The vendored voice pack contains 55 clips, excluding Failure and GameOver entries. Source filenames, selection and per-file checksums are recorded in assets/voices-manifest.json in the project source repository.
+
+Source: https://sounds.spriters-resource.com/nintendo_switch/wariowaregetittogether/asset/437608/
+Soundboard reference: https://www.101soundboards.com/boards/1602811-warioware-get-it-together-nintendo-switch-pyoro-voice

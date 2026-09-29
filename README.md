@@ -1,0 +1,42 @@
+# Bird & Beans GX
+
+A Wii homebrew port of **Bird & Beans / Pyoro**, with both games, original gameplay code, music and sound effects, and a new title screen and pause menu.
+
+## Install
+
+You’ll need the Homebrew Channel, an SD card, and your own **(USA)(EnFrEs)** DSiWare ROM.
+
+1. Extract the release ZIP to the root of your SD card.
+2. Put your `.nds` ROM in `sd:/apps/birdbeans/`, beside `boot.dol`. Any filename is fine. Unzip it first if it’s in a ZIP.
+3. Launch **Bird & Beans GX** from the Homebrew Channel.
+
+The app checks the ROM and prepares its data automatically on first launch. Later launches use the saved cache, so you're free to remove the ROM after first successful boot. Other regions and revisions aren’t supported.
+
+Cute Pyoro transition voices are included for the loading screens[^1]. :3
+
+## Controls
+
+| Controller | Move | Tongue / spit | Pause | Back / exit |
+|---|---|---|---|---|
+| Wii Remote, sideways | D-pad | 1 / 2 | Plus | Home |
+| Wii Remote + Nunchuk | Stick | C / Z | Plus | Home |
+| Classic Controller | D-pad / left stick | A / B | Plus | Home |
+| GameCube Controller | D-pad / stick | A / B | Start | Z |
+
+In menus, select with A / 2 and go back with B. Press a button or move the stick on another controller to switch all controls to it, including during play.
+
+## Display and saves
+
+Open **Pause → Graphics Options** to toggle **240p at 60 Hz** and choose between **2× and Fill** scaling. Scaling applies to gameplay and pause menus. The title and loading screen always use the full screen. The fixed scale keeps the original proportions and picture size when switching video modes; 2× uses 384 lines in normal output and 192 in 240p. Each launch starts in 480i/480p with Fill selected.
+
+Fill detects the Wii’s 4:3 or 16:9 setting. Widescreen systems also show **Aspect Ratio** for the option to use a centered 4:3 view.
+
+High scores are saved in `apps/birdbeans/scores.dat` on game over, restart, return to title or a clean exit. Keep that file when updating. Powering off during a run can lose an unsaved record.
+
+## License
+
+Basic play has been tested on Wii, with broader controller testing in Dolphin. Physical confirmation of 240p and controller handoff, plus vWii and PAL testing, is pending. Wii U GamePad and arbitrary USB controllers aren’t supported.
+
+The port code and documentation are **GPLv3**. Nintendo game data and the included Pyoro recordings are excluded; third-party components retain their own licenses. See [license notices](licenses/README.md).
+
+[^1]: The loading screens aren't real loading screens, they're just cute little transitions. It felt odd to have the game instantly.

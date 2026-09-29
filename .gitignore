@@ -1,0 +1,29 @@
+# Build outputs and packaged releases
+/build/
+/dist/
+/dev/
+/apps/
+/birdbeans-host
+*.o
+*.d
+*.elf
+*.dol
+*.map
+*.zip
+
+# Local ROMs, extracted game data and saves
+*.[nN][dD][sS]
+*.[sS][rR][lL]
+*.sdat
+*.narc
+*.pak
+!/assets/voices.pak
+scores.dat
+scores.dat.*
+*.tmp
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+/.venv/
+/venv/

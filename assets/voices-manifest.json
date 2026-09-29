@@ -1,0 +1,499 @@
+{
+  "source_url": "https://sounds.spriters-resource.com/nintendo_switch/wariowaregetittogether/asset/437608/",
+  "download_url": "https://sounds.spriters-resource.com/media/assets/434/437608.zip?updated=1755550368",
+  "source_zip_sha256": "2dec3b9fff33173398bd7836fb90bed1d95def0c6c4882a6db1e9536005c4dc8",
+  "board_url": "https://www.101soundboards.com/boards/1602811-warioware-get-it-together-nintendo-switch-pyoro-voice",
+  "clips": [
+    {
+      "file": "Pyoro/00000 - WAV_0_GUESS_V_A_Fancy_Pyoro_Action_TongueExtend_1.wav",
+      "title": "Pyoro - 00000 - WAV_0_GUESS_V_A_Fancy_Pyoro_Action_TongueExtend_1 - Yeah.",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57076989-pyoro-00000-wav-0-guess-v-a-fancy-pyoro-action-tongueextend-1-yeah",
+      "include": true,
+      "sha256": "dc921959a1912eb3a6766a0f4831313e60b48be420480146bd4f7f5198011da7"
+    },
+    {
+      "file": "Pyoro/00001 - WAV_1_GUESS_V_A_Fancy_Pyoro_Action_TongueExtend_2.wav",
+      "title": "Pyoro - 00001 - WAV_1_GUESS_V_A_Fancy_Pyoro_Action_TongueExtend_2 - Hello?",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57077150-pyoro-00001-wav-1-guess-v-a-fancy-pyoro-action-tongueextend-2-hello",
+      "include": true,
+      "sha256": "21744653a256719bd4fa00c297885227d99ba0725e0789d5024099c273f30ab9"
+    },
+    {
+      "file": "Pyoro/00002 - WAV_2_GUESS_V_A_Fancy_Pyoro_Action_TongueExtend_3.wav",
+      "title": "Pyoro - 00002 - WAV_2_GUESS_V_A_Fancy_Pyoro_Action_TongueExtend_3 - Yorong!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57077301-pyoro-00002-wav-2-guess-v-a-fancy-pyoro-action-tongueextend-3-yorong",
+      "include": true,
+      "sha256": "53ba60079c76d810c3b66b0383546b0ca269a741c66102961669b6fa06939981"
+    },
+    {
+      "file": "Pyoro/00003 - WAV_3_GUESS_V_A_Pyoro_Action_06.wav",
+      "title": "Pyoro - 00003 - WAV_3_GUESS_V_A_Pyoro_Action_06 - Eww!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57077456-pyoro-00003-wav-3-guess-v-a-pyoro-action-06-eww",
+      "include": true,
+      "sha256": "ba4387d1fb64a7d8cc0afbb81a34a89fb9f294bb0d4506731dfd5a4cc199f700"
+    },
+    {
+      "file": "Pyoro/00004 - WAV_4_GUESS_V_A_Pyoro_Action_07.wav",
+      "title": "Pyoro - 00004 - WAV_4_GUESS_V_A_Pyoro_Action_07 - You",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57077608-pyoro-00004-wav-4-guess-v-a-pyoro-action-07-you",
+      "include": true,
+      "sha256": "a9c002eb9813235c7a2165dd70ddbbf2078c6a61f0af189f2137450a8316bf25"
+    },
+    {
+      "file": "Pyoro/00005 - WAV_5_GUESS_V_A_Pyoro_Action_08.wav",
+      "title": "Pyoro - 00005 - WAV_5_GUESS_V_A_Pyoro_Action_08 - Get up!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57077797-pyoro-00005-wav-5-guess-v-a-pyoro-action-08-get-up",
+      "include": true,
+      "sha256": "c664862da7267f97760df7311772310bd93b57ee645e09d72a52cdfbd995ef81"
+    },
+    {
+      "file": "Pyoro/00006 - WAV_6_GUESS_V_A_Pyoro_Action_09.wav",
+      "title": "Pyoro - 00006 - WAV_6_GUESS_V_A_Pyoro_Action_09 - Yaro?",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57077953-pyoro-00006-wav-6-guess-v-a-pyoro-action-09-yaro",
+      "include": true,
+      "sha256": "dbeb1f453b7877748e43c5d8a654b05846dd834897ab5620e0206afb7580ac04"
+    },
+    {
+      "file": "Pyoro/00007 - WAV_7_GUESS_V_A_Pyoro_Action_10.wav",
+      "title": "Pyoro - 00007 - WAV_7_GUESS_V_A_Pyoro_Action_10 - Hello!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57078119-pyoro-00007-wav-7-guess-v-a-pyoro-action-10-hello",
+      "include": true,
+      "sha256": "a31245292b52aa7b57ab71e6ec8f6ea9ce36489eb4454b891459861b72e7836b"
+    },
+    {
+      "file": "Pyoro/00008 - WAV_8_GUESS_V_A_Pyoro_Action_11.wav",
+      "title": "Pyoro - 00008 - WAV_8_GUESS_V_A_Pyoro_Action_11 - YOLOLOL",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57078233-pyoro-00008-wav-8-guess-v-a-pyoro-action-11-yololol",
+      "include": true,
+      "sha256": "26f83a2316d50486cfd5c30251cf16e686b1588342acd81e33b7f439ec84b012"
+    },
+    {
+      "file": "Pyoro/00009 - WAV_9_GUESS_V_A_Pyoro_Action_12.wav",
+      "title": "Pyoro - 00009 - WAV_9_GUESS_V_A_Pyoro_Action_12 - You",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57078348-pyoro-00009-wav-9-guess-v-a-pyoro-action-12-you",
+      "include": true,
+      "sha256": "f8cf48992c3c81a4f0a2ec963372c6f8d8947551626c706305e21e54e328d862"
+    },
+    {
+      "file": "Pyoro/00010 - WAV_10_GUESS_V_A_Pyoro_Action_13.wav",
+      "title": "Pyoro - 00010 - WAV_10_GUESS_V_A_Pyoro_Action_13 - You",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57078498-pyoro-00010-wav-10-guess-v-a-pyoro-action-13-you",
+      "include": true,
+      "sha256": "2934544345d59fe7e35b32d242e5a2c95e7b5d4f7cbdb9ff2868563e6790533e"
+    },
+    {
+      "file": "Pyoro/00011 - WAV_11_GUESS_V_A_Pyoro_Action_14.wav",
+      "title": "Pyoro - 00011 - WAV_11_GUESS_V_A_Pyoro_Action_14 - You",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57078640-pyoro-00011-wav-11-guess-v-a-pyoro-action-14-you",
+      "include": true,
+      "sha256": "c90c9edf759c56c7eab8883d545fb08d00030f0fdaedd226c7bbcacda4cc0351"
+    },
+    {
+      "file": "Pyoro/00012 - WAV_12_GUESS_V_A_Pyoro_Action_15_lp.wav",
+      "title": "Pyoro - 00012 - WAV_12_GUESS_V_A_Pyoro_Action_15_lp - .",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57078806-pyoro-00012-wav-12-guess-v-a-pyoro-action-15-lp",
+      "include": true,
+      "sha256": "962814e00da67afa2c3ea70214fc140c1176ed411f506e0b13d3ad92222c683f"
+    },
+    {
+      "file": "Pyoro/00013 - WAV_13_GUESS_V_A_Pyoro_Action_TongueExtend_1.wav",
+      "title": "Pyoro - 00013 - WAV_13_GUESS_V_A_Pyoro_Action_TongueExtend_1 - Pyeong!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57078960-pyoro-00013-wav-13-guess-v-a-pyoro-action-tongueextend-1-pyeong",
+      "include": true,
+      "sha256": "17e5238ddd11bb9a36960c767ba4d47c7b5d43adf7244505f137615d8116e633"
+    },
+    {
+      "file": "Pyoro/00014 - WAV_14_GUESS_V_A_Pyoro_Action_TongueExtend_2.wav",
+      "title": "Pyoro - 00014 - WAV_14_GUESS_V_A_Pyoro_Action_TongueExtend_2 - Tio-ro!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57079137-pyoro-00014-wav-14-guess-v-a-pyoro-action-tongueextend-2-tio-ro",
+      "include": true,
+      "sha256": "eaf52e687af09f63bdb3936a38f6b6abeb90aa8924ce4d991fb9bd85153e3471"
+    },
+    {
+      "file": "Pyoro/00015 - WAV_15_GUESS_V_A_Pyoro_Action_TongueExtend_3.wav",
+      "title": "Pyoro - 00015 - WAV_15_GUESS_V_A_Pyoro_Action_TongueExtend_3 - Yorong!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57079285-pyoro-00015-wav-15-guess-v-a-pyoro-action-tongueextend-3-yorong",
+      "include": true,
+      "sha256": "242250fcc0a2fd944ff16bf388ee9ce9ae923dec315acecb18831c830b5cda00"
+    },
+    {
+      "file": "Pyoro/00016 - WAV_16_GUESS_V_A_Pyoro_CharaSelect_01.wav",
+      "title": "Pyoro - 00016 - WAV_16_GUESS_V_A_Pyoro_CharaSelect_01 - Yeah.",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57079439-pyoro-00016-wav-16-guess-v-a-pyoro-charaselect-01-yeah",
+      "include": true,
+      "sha256": "47f082d87dc9e343ae37b64f8008ae6dd33c9b463a85b1a574e4fe9f8ad94d8c"
+    },
+    {
+      "file": "Pyoro/00017 - WAV_17_GUESS_V_A_Pyoro_CharaSelect_02.wav",
+      "title": "Pyoro - 00017 - WAV_17_GUESS_V_A_Pyoro_CharaSelect_02 - Yow!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57079600-pyoro-00017-wav-17-guess-v-a-pyoro-charaselect-02-yow",
+      "include": true,
+      "sha256": "3d23f470ec97cf6beb45ce6e5a3139c84211574d07ec0587652adf25337c5616"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Bonus_01_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Bonus_01_opus.opus - Pioro pioroon!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57079749-pyoro-v-pyoro-bonus-01-opusopus-pioro-pioroon",
+      "include": true,
+      "sha256": "71a8ffee1c38c49d775092dff3ad8aeef77b3d9de739fd6c7dcac63e69751e9e"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Boss_01_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Boss_01_opus.opus - Pia pia pia pia!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57079917-pyoro-v-pyoro-boss-01-opusopus-pia-pia-pia-pia",
+      "include": true,
+      "sha256": "9a39883e72c3df027b4da4f991f748aefc5be948be4cf3c29bc2b15330358ecb"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Boss_02_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Boss_02_opus.opus - Pioro, pioro, pioro!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57080037-pyoro-v-pyoro-boss-02-opusopus-pioro-pioro-pioro",
+      "include": true,
+      "sha256": "4bb0f4f581f0da275302a0f5ca045a425790b8dcf0e0970cf06966f20dfe275f"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Chara_Item_01_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Chara_Item_01_opus.opus - Pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo-pyo...",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57080668-pyoro-v-pyoro-chara-item-01-opusopus",
+      "include": true,
+      "sha256": "5991daf9aa21931fa29b94d77cf05ee3fcbdb8e9d43b6e984822aed5d5cbeca2"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Chara_Item_02_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Chara_Item_02_opus.opus - Pyeong-pyeong-pyeong!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57080838-pyoro-v-pyoro-chara-item-02-opusopus-pyeong-pyeong-pyeong",
+      "include": true,
+      "sha256": "0addc3d013d28b7e9020851c2e37b922a211beb9e69171897e9294e8b031a698"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Chara_Item_03_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Chara_Item_03_opus.opus - Pyo-roong!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57080992-pyoro-v-pyoro-chara-item-03-opusopus-pyo-roong",
+      "include": true,
+      "sha256": "d7880541bee1700a777d65004b8d4e44bd316a33345768208151a4b1066b8b8d"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Chara_Item_04_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Chara_Item_04_opus.opus - Pyeong!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57081164-pyoro-v-pyoro-chara-item-04-opusopus-pyeong",
+      "include": true,
+      "sha256": "ac805a34a6559772f618f6e0726831a79de7ea25825eca66fbf85ace7696bd8c"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Chara_Item_05_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Chara_Item_05_opus.opus - Pyo pyo long.",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57081337-pyoro-v-pyoro-chara-item-05-opusopus-pyo-pyo-long",
+      "include": true,
+      "sha256": "f8ed6406ec24e1256f0b1a88d9d7a4777a383c23ab8298c999e3c5d4f631ff47"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_CharaChange_01_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_CharaChange_01_opus.opus - Tia-da!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57080179-pyoro-v-pyoro-charachange-01-opusopus-tia-da",
+      "include": true,
+      "sha256": "6b70712e372ae755998158f410e3a2c6528e1a95711b022eabd46c1a2b11d324"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_CharaChange_02_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_CharaChange_02_opus.opus - Go!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57080352-pyoro-v-pyoro-charachange-02-opusopus-go",
+      "include": true,
+      "sha256": "8933567062a4ded4337b0e6ba91e1e329be3d8e2f9ccc34ed6c678ca13b6a1a7"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_CharaChange_03_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_CharaChange_03_opus.opus - Bye.",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57080505-pyoro-v-pyoro-charachange-03-opusopus-bye",
+      "include": true,
+      "sha256": "5b18ffa86ba6c271a5649e587108b2d616e60b2aaef61fe3f25af4ccdb6c5e88"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Continue_01_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Continue_01_opus.opus - Pioro-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo-roo...",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57081513-pyoro-v-pyoro-continue-01-opusopus",
+      "include": true,
+      "sha256": "6a451df36a3fee01f0a9b24d99fe0caccae0b3c003936c0a1cab2af7dd613f57"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Continue_02_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Continue_02_opus.opus - Pioro!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57081688-pyoro-v-pyoro-continue-02-opusopus-pioro",
+      "include": true,
+      "sha256": "8fc4988bc26a0e71e751bf1e9b68e306f9f0b9704b5bc1a2deb1f6ed73b4efe1"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Continue_03_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Continue_03_opus.opus - Pioro pioro!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57081848-pyoro-v-pyoro-continue-03-opusopus-pioro-pioro",
+      "include": true,
+      "sha256": "3e4e198db6d5c802b424944593421f21c3b0f453813a4e76703559a066d96998"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Failure_01_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Failure_01_opus.opus - Yodoo!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57082023-pyoro-v-pyoro-failure-01-opusopus-yodoo",
+      "include": false,
+      "sha256": "d80d568480de2638eea6b6fe7ebcdb3a4ef1a9497da2619a1a2bedb6c2725079"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Failure_02_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Failure_02_opus.opus - Hello!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57082174-pyoro-v-pyoro-failure-02-opusopus-hello",
+      "include": false,
+      "sha256": "8289f8960404ca325d36c51d0810b6d3020ea470d1da5fe933993ceb38d0239e"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Failure_03_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Failure_03_opus.opus - Kia-ro!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57082324-pyoro-v-pyoro-failure-03-opusopus-kia-ro",
+      "include": false,
+      "sha256": "399b6fb6314edb605ff49256c294984d44dd9999bdfc3d632f76f03710c96403"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Failure_04_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Failure_04_opus.opus - Pyo-ro-ro!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57082515-pyoro-v-pyoro-failure-04-opusopus-pyo-ro-ro",
+      "include": false,
+      "sha256": "72afc140ed5a6fe23ef7b6206fee8528f1759120980385d039330ca746d85039"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Failure_05_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Failure_05_opus.opus - Piu-piu!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57082692-pyoro-v-pyoro-failure-05-opusopus-piu-piu",
+      "include": false,
+      "sha256": "b0fdfee18eca833454ecc966d355ee74069ffb401d278e36b6ca7251e680b3ca"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Failure_06_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Failure_06_opus.opus - You know?",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57082830-pyoro-v-pyoro-failure-06-opusopus-you-know",
+      "include": false,
+      "sha256": "63623bbbe8b8c51ff9576d1e99131efd7d67543539e1cc5206aedcc02f098a38"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Failure_07_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Failure_07_opus.opus - Pioro!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57083003-pyoro-v-pyoro-failure-07-opusopus-pioro",
+      "include": false,
+      "sha256": "0b3a29f2aaf4ff68efe9b0296f626104d803751bd8fa14244d4a3b34ed7f507b"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Failure_08_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Failure_08_opus.opus - Hello?",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57083142-pyoro-v-pyoro-failure-08-opusopus-hello",
+      "include": false,
+      "sha256": "40e7890159ab0bc40607fa8b5965db55e89a2b5151de971ea2c0a396d452ab24"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Failure_09_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Failure_09_opus.opus - You know?",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57083295-pyoro-v-pyoro-failure-09-opusopus-you-know",
+      "include": false,
+      "sha256": "11079b0cae58daf738c27f313a2ddb79ecbdbdecdd61908bc6903de952675b0e"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Failure_10_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Failure_10_opus.opus - Yon!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57083469-pyoro-v-pyoro-failure-10-opusopus-yon",
+      "include": false,
+      "sha256": "3b7d94acea624b54bd57e317a4d51c6144cedc942814d887db7561239987cd6b"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Failure_11_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Failure_11_opus.opus - Yorong!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57083618-pyoro-v-pyoro-failure-11-opusopus-yorong",
+      "include": false,
+      "sha256": "c661005204b8bab72c11fd778950ac4c9344ad1aa9c43e587cfaa5fa65336c7d"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Failure_12_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Failure_12_opus.opus - Yorul?",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57083775-pyoro-v-pyoro-failure-12-opusopus-yorul",
+      "include": false,
+      "sha256": "dc025fda4b7da063b301f344dbc0aab00cd0a806b04ad5479d4dd27f8ddb7a0c"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Failure_13_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Failure_13_opus.opus - Tioro!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57083943-pyoro-v-pyoro-failure-13-opusopus-tioro",
+      "include": false,
+      "sha256": "e947516ba89576914649fd974e2cbcc062b02008f065d1f54630a078d2ec74c7"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_GameClear_01_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_GameClear_01_opus.opus - Pyo-ro-pyo-ro-pyo-ro!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57084117-pyoro-v-pyoro-gameclear-01-opusopus-pyo-ro-pyo-ro-pyo-ro",
+      "include": true,
+      "sha256": "0c358f117a96d886ddcf56e015a838548b6b0c6532d39913c5d533984302dd96"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_GameOver_01_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_GameOver_01_opus.opus - Yodoo!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57084261-pyoro-v-pyoro-gameover-01-opusopus-yodoo",
+      "include": false,
+      "sha256": "36c32268617c61f4068b74096997d5e0ed800053759f8473ae5a982baae7bb8a"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_GameOver_02_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_GameOver_02_opus.opus - Pioro!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57084434-pyoro-v-pyoro-gameover-02-opusopus-pioro",
+      "include": false,
+      "sha256": "582be7fa378c30abc26bcdef707c54aa69f8287654709fc5ed77b0feab4476e4"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_GameStart_01_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_GameStart_01_opus.opus - Bye.",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57084576-pyoro-v-pyoro-gamestart-01-opusopus-bye",
+      "include": true,
+      "sha256": "0cf7bcbb1949f202d2816951c4bba5c85797384871d8a00eec096e8e94b9b6f2"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_RankUp_01_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_RankUp_01_opus.opus - Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia Tia...",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57084737-pyoro-v-pyoro-rankup-01-opusopus-tia-tia-tia-tia-tia-tia-tia-tia-tia-tia-tia-tia",
+      "include": true,
+      "sha256": "1558078429ae41c9756f8d121c29f07b87e3e6e676426e6faae5add1d42a2998"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Result_01_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Result_01_opus.opus - Pyo lo pyo lo pyo lo!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57084931-pyoro-v-pyoro-result-01-opusopus-pyo-lo-pyo-lo-pyo-lo",
+      "include": true,
+      "sha256": "07bf72cdeb941863f623fdc45e7613d5624c762ec53d879c223f09c411f6b0bc"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Result_02_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Result_02_opus.opus - Pyo-ro! Pyo-ro-pyo-ro-pyo-ro!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57085093-pyoro-v-pyoro-result-02-opusopus-pyo-ro-pyo-ro-pyo-ro-pyo-ro",
+      "include": true,
+      "sha256": "031e8e17f4e0731a6cf135a02215c944aa29ebd4c5f50be68d8a636a0ba1d4d8"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Result_03_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Result_03_opus.opus - Pyo lo pyo pyo pyo pyo pyo pyo",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57085250-pyoro-v-pyoro-result-03-opusopus-pyo-lo-pyo-pyo-pyo-pyo-pyo-pyo",
+      "include": true,
+      "sha256": "8b86604bc2ed89319aaef1638200be45c838fd1b4623940aa334e24e8277504d"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_SpeedUp_01_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_SpeedUp_01_opus.opus - Pyo-pyo-pyo-pyo-pyo!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57085417-pyoro-v-pyoro-speedup-01-opusopus-pyo-pyo-pyo-pyo-pyo",
+      "include": true,
+      "sha256": "707ec5f942d27db7c5b8d6f46c91365252079a6695976d6b454cc18f35eec3a9"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_SpeedUp_02_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_SpeedUp_02_opus.opus - Pio piopio piopio piopio!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57085583-pyoro-v-pyoro-speedup-02-opusopus-pio-piopio-piopio-piopio",
+      "include": true,
+      "sha256": "d51965425e2ee886f043b3f2492f3eb6660e33a6b72f2cd0cfb1568ab646e2d4"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Success_01_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Success_01_opus.opus - Go, go, go!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57085748-pyoro-v-pyoro-success-01-opusopus-go-go-go",
+      "include": true,
+      "sha256": "b1cd17fb3f7826658aaa01a03d1ee10af7fa6374da48e39c0bbe8051d5631dd2"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Success_02_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Success_02_opus.opus - Yorororoo!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57085911-pyoro-v-pyoro-success-02-opusopus-yorororoo",
+      "include": true,
+      "sha256": "74f0295501da501f39c221932528e11a9dd0b9f4dd950caf63ceca48ffa11dd4"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Success_03_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Success_03_opus.opus - Piappiappiaurong!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57086086-pyoro-v-pyoro-success-03-opusopus-piappiappiaurong",
+      "include": true,
+      "sha256": "06c72c0382e47a9c7d9ede07fb80c808ebe729f6d50ec777f39ac7ac43408a1a"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Success_04_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Success_04_opus.opus - Pewdo!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57086244-pyoro-v-pyoro-success-04-opusopus-pewdo",
+      "include": true,
+      "sha256": "bdba36e826f53326a1f6c5aa31f462e5be844f480d01004ff5ec6c2214f92e26"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Success_05_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Success_05_opus.opus - Piorro piorro!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57086413-pyoro-v-pyoro-success-05-opusopus-piorro-piorro",
+      "include": true,
+      "sha256": "65711820fe13fda040220435b4e6fcfde7b17a37c4404d0f22e257fd455f8272"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Success_06_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Success_06_opus.opus - Pyo-pyo-pyo!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57086567-pyoro-v-pyoro-success-06-opusopus-pyo-pyo-pyo",
+      "include": true,
+      "sha256": "ab05535b2f647d5fb44d180c35bc1f3e626c19f717af6b56b109228a0ea70415"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Success_07_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Success_07_opus.opus - Pyo-ro-ro!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57086733-pyoro-v-pyoro-success-07-opusopus-pyo-ro-ro",
+      "include": true,
+      "sha256": "ce9c6c4d7d208abbf956daf654976b887d710d354aa50edec1bffd477984f72f"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Success_08_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Success_08_opus.opus - Doodle!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57086915-pyoro-v-pyoro-success-08-opusopus-doodle",
+      "include": true,
+      "sha256": "9eb37c97192e277b7109044ecb17a60fdf9d95197a19da88dc5e3f7cdb7f568e"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Success_09_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Success_09_opus.opus - T-O-R-O-T-O-R-O!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57087102-pyoro-v-pyoro-success-09-opusopus-t-o-r-o-t-o-r-o",
+      "include": true,
+      "sha256": "1601430fe07a7fe5378e1a2b190ceffa1684305d5d91dbe223ab95ccb7e4bc13"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Success_10_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Success_10_opus.opus - Yorotyaura.",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57087280-pyoro-v-pyoro-success-10-opusopus-yorotyaura",
+      "include": true,
+      "sha256": "6005c13e9a00d92adb3f92f732316ed12c32e07db1226df90025b5781d87dae2"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Success_11_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Success_11_opus.opus - Pyo-ro-pyo-ro!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57087422-pyoro-v-pyoro-success-11-opusopus-pyo-ro-pyo-ro",
+      "include": true,
+      "sha256": "bd7f07bf4a507cc5e7cf252d097783cb365e41fb943a609f656bc37c80eb0888"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Success_12_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Success_12_opus.opus - Pioro pioro pion!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57087606-pyoro-v-pyoro-success-12-opusopus-pioro-pioro-pion",
+      "include": true,
+      "sha256": "8b97986d51f80bc4a63b6487c67b38d8ecfa0891123e5b948033a1643d516ba5"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Success_13_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Success_13_opus.opus - Yorot!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57087750-pyoro-v-pyoro-success-13-opusopus-yorot",
+      "include": true,
+      "sha256": "f083662902706396d06f71758e33a44540cbfc7a6ebef8670cb0b7870ca267ce"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Success_14_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Success_14_opus.opus - Pioro-roo!",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57087941-pyoro-v-pyoro-success-14-opusopus-pioro-roo",
+      "include": true,
+      "sha256": "708aff3bc67496222b8bc220a790cd48957a19497b7b0dad05d2508770b722b7"
+    },
+    {
+      "file": "Pyoro/V_Pyoro_Success_15_opus.opus.wav",
+      "title": "Pyoro - V_Pyoro_Success_15_opus.opus - Yorot.",
+      "soundboard_url": "https://www.101soundboards.com/sounds/57088100-pyoro-v-pyoro-success-15-opusopus-yorot",
+      "include": true,
+      "sha256": "9cd1d8e5322b7cfb7a809cd8a0fc4c9a41f6c8a3c00bad25e12871a1781cad53"
+    }
+  ],
+  "pack_sha256": "f1801da4bc7a5bf9fd2df65b88700963463aa8b167a03bc2305092884031fc79"
+}

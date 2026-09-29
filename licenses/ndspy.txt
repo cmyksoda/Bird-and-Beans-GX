@@ -1,0 +1,7 @@
+Native ROM decompression format reference: ndspy 4.2.0
+https://github.com/RoadrunnerWMC/ndspy
+Copyright 2019 RoadrunnerWMC
+
+The LZ10 and backward ARM9 decoders were adapted with reference to ndspy's lz10.py and codeCompression.py, licensed under GNU GPL version 3 or later. This project uses version 3; its full text is in LICENSE. ndspy attributes its backward code decompression to DSDecmp and its LZ10 implementation to NSMBe/Elitemap.
+
+The optional development extractor uses ndspy as a separately installed dependency. The Wii app does not require Python or ndspy at runtime.
