@@ -23,7 +23,8 @@ Cute Pyoro transition voices are included for the loading[^1] screens. :3
 
 | Controller | Move | Tongue / spit | Pause | Back / exit |
 |---|---|---|---|---|
-| Wii Remote, sideways | D-pad | 1 / 2 | Plus | Home |
+| Wii Remote, horizontal | D-pad | 1 / 2 | Plus | Home |
+| Wii Remote, vertical | D-pad | A | Plus | Home |
 | Wii Remote + Nunchuk | Stick | C / Z | Plus | Home |
 | Classic Controller | D-pad / left stick | A / B | Plus | Home |
 | GameCube Controller | D-pad / stick | A / B | Start | Z |
