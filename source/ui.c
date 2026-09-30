@@ -126,7 +126,7 @@ void ui_pause(Game *g,int selected){
 void ui_graphics(Game *g,int selected){
     dim(g);int wide=platform_wide(),rows=wide?4:3,y=wide?25:36,h=wide?144:121;card(g,y,h);
     center(g,y+12,"GRAPHICS OPTIONS",INK);
-    const char *scale=platform_pixel_scale()?"PIXEL SCALE: 2X":"PIXEL SCALE: FILL";
+    const char *scale=platform_pixel_scale()?"PIXEL SCALE: FIXED":"PIXEL SCALE: FILL";
     const char *labels[]={platform_240p()?"240P MODE: ON":"240P MODE: OFF",scale,wide?(platform_pillarbox()?"ASPECT RATIO: 4:3":"ASPECT RATIO: 16:9"):"BACK","BACK"};
     for(int i=0;i<rows;i++){
         int yy=y+36+i*22;
