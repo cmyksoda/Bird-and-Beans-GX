@@ -11,7 +11,7 @@
 #include <string.h>
 #include <stdio.h>
 static GXRModeObj render_mode,normal_mode,*mode=&render_mode;static void *xfb[2],*fifo;static int front,wide,pillarbox,low_resolution,pixel_scale,video_visible;static volatile int quit;
-static InputState controllers=INPUT_STATE_INIT;
+static InputState controllers=INPUT_STATE_INIT;static int upright[4];
 static uint16_t texels[640*480] ATTRIBUTE_ALIGN(32);static int16_t audio_buffers[3][2048] ATTRIBUTE_ALIGN(32);static int audio_started;
 static uint64_t audio_completed,audio_segment_frames;static int audio_pending=-1;
 static void reset(u32 a,void*b){(void)a;(void)b;quit=1;}
@@ -63,7 +63,12 @@ static unsigned remote(int i,int *ok){
         if(b&WPAD_BUTTON_UP)r|=KEY_UP;if(b&WPAD_BUTTON_DOWN)r|=KEY_DOWN;float ny=cosf(d->exp.nunchuk.js.ang*0.0174532925f)*d->exp.nunchuk.js.mag;if(ny>0.4f)r|=KEY_UP;if(ny< -0.4f)r|=KEY_DOWN;
         r|=axis(sinf(d->exp.nunchuk.js.ang*0.0174532925f)*d->exp.nunchuk.js.mag);
         if(b&WPAD_BUTTON_LEFT)r|=KEY_LEFT;if(b&WPAD_BUTTON_RIGHT)r|=KEY_RIGHT;if(b&(WPAD_NUNCHUK_BUTTON_C|WPAD_NUNCHUK_BUTTON_Z))r|=KEY_ACTION;
-    }else{if(b&WPAD_BUTTON_RIGHT)r|=KEY_UP;if(b&WPAD_BUTTON_LEFT)r|=KEY_DOWN;if(b&WPAD_BUTTON_UP)r|=KEY_LEFT;if(b&WPAD_BUTTON_DOWN)r|=KEY_RIGHT;}
+    }else{
+        // The grip decides which D-pad axis moves; A means upright, 1 or 2 sideways. B is shared by both.
+        u32 pressed=WPAD_ButtonsDown(i);if(pressed&WPAD_BUTTON_A)upright[i]=1;else if(pressed&(WPAD_BUTTON_1|WPAD_BUTTON_2))upright[i]=0;
+        if(upright[i]){if(b&WPAD_BUTTON_UP)r|=KEY_UP;if(b&WPAD_BUTTON_DOWN)r|=KEY_DOWN;if(b&WPAD_BUTTON_LEFT)r|=KEY_LEFT;if(b&WPAD_BUTTON_RIGHT)r|=KEY_RIGHT;}
+        else{if(b&WPAD_BUTTON_RIGHT)r|=KEY_UP;if(b&WPAD_BUTTON_LEFT)r|=KEY_DOWN;if(b&WPAD_BUTTON_UP)r|=KEY_LEFT;if(b&WPAD_BUTTON_DOWN)r|=KEY_RIGHT;}
+    }
     return r;
 }
 unsigned platform_input(void){

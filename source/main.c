@@ -87,7 +87,8 @@ int main(int argc,char **argv){
             }
         }else if(menu){
             if(down&KEY_MENU)break;
-            if(down&(KEY_LEFT|KEY_RIGHT)){mode^=1;audio_play(&sound,AUDIO_UI_PLAYER,13);}
+            // Up/down too, so an upright Wii Remote can switch games before its first A press.
+            if(down&(KEY_LEFT|KEY_RIGHT|KEY_UP|KEY_DOWN)){mode^=1;audio_play(&sound,AUDIO_UI_PLAYER,13);}
             if((down&(KEY_ACTION|KEY_PAUSE))&&!(down&KEY_BACK)){
                 pause=0;was_dead=0;audio_stop(&sound);platform_audio_reset(&sound);game_start(&game,mode,(uint32_t)time(NULL));
                 // Let the device's already-mixed title audio drain before the silent fade.
