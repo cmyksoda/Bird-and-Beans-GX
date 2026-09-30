@@ -7,13 +7,18 @@
 #include <time.h>
 static Game game;static Audio sound;
 static const double start_fade_seconds=0.25;
-static char savepath[1024];static int save_failed;
-static void highs_read(void){unsigned char b[12];FILE *f=fopen(savepath,"rb");if(!f)return;if(fread(b,1,12,f)==12&&!memcmp(b,"BBS1",4))for(int i=0;i<2;i++){unsigned n=le32(b+4+i*4);if(n<=999990)game.high[i]=n;}fclose(f);}
-static void highs_write(void){unsigned n=game_score(&game);if(n>game.high[game.mode])game.high[game.mode]=n;unsigned char b[12]={'B','B','S','1'};for(int i=0;i<2;i++)for(int j=0;j<4;j++)b[4+i*4+j]=game.high[i]>>(j*8);char tmp[1040];snprintf(tmp,sizeof(tmp),"%s.tmp",savepath);FILE*f=fopen(tmp,"wb");if(!f){save_failed=1;return;}int ok=fwrite(b,1,12,f)==12;if(fclose(f))ok=0;if(!ok){save_failed=1;return;}
+static char savepath[1024];static int save_failed;static unsigned saved_video;
+static unsigned video_flags(void){return (platform_240p()?1:0)|(platform_pixel_scale()?2:0)|(platform_pillarbox()?4:0);}
+// scores.dat is BBS1, both best scores, then video flags; 1.0.1 and older read only the first 12 bytes.
+static void highs_read(void){unsigned char b[16];FILE *f=fopen(savepath,"rb");if(!f)return;size_t len=fread(b,1,16,f);fclose(f);if(len<12||memcmp(b,"BBS1",4))return;
+    for(int i=0;i<2;i++){unsigned n=le32(b+4+i*4);if(n<=999990)game.high[i]=n;}
+    if(len==16){if(b[12]&1)platform_toggle_240p();if(b[12]&2)platform_scale();if(b[12]&4)platform_aspect();}saved_video=video_flags();}
+static void save_write(void){unsigned char b[16]={'B','B','S','1'};for(int i=0;i<2;i++)for(int j=0;j<4;j++)b[4+i*4+j]=game.high[i]>>(j*8);b[12]=saved_video;char tmp[1040];snprintf(tmp,sizeof(tmp),"%s.tmp",savepath);FILE*f=fopen(tmp,"wb");if(!f){save_failed=1;return;}int ok=fwrite(b,1,16,f)==16;if(fclose(f))ok=0;if(!ok){save_failed=1;return;}
     if(rename(tmp,savepath)==0){save_failed=0;return;}
     char bak[1040];snprintf(bak,sizeof(bak),"%s.bak",savepath);remove(bak);
     if(rename(savepath,bak)!=0){save_failed=1;return;}
     if(rename(tmp,savepath)==0){remove(bak);save_failed=0;}else{rename(bak,savepath);save_failed=1;}}
+static void highs_write(void){unsigned n=game_score(&game);if(n>game.high[game.mode])game.high[game.mode]=n;save_write();}
 static void start(int mode,int deterministic){audio_stop(&sound);game_start(&game,mode,deterministic?0x12345678:(uint32_t)time(NULL));audio_commands(&sound,&game);}
 // Keep controller history across scenes so a held button stays held.
 static void title_music(void){audio_stop(&sound);audio_play(&sound,0,0);}
@@ -126,6 +131,8 @@ int main(int argc,char **argv){
         }else{
             if((down&(KEY_PAUSE|KEY_MENU))||!platform_connected()){pause=1;selection=0;graphics=0;audio_play(&sound,AUDIO_UI_PLAYER,11);}
         }
+        // Only confirmed on leaving the menu, so quitting from a black 240p screen doesn't keep 240p.
+        if(!graphics&&video_flags()!=saved_video){saved_video=video_flags();save_write();}
         if(smoke){held=((total/180)%2?32:16)|(total%90<65);acc=step;}
         if(!menu&&!pause&&transition_phase<0&&!game.vm.fault){while(acc>=step){if(!game_tick(&game,held&49))break;audio_commands(&sound,&game);acc-=step;total++;}}else acc=0;
         if(game.dead&&!was_dead&&!smoke){highs_write();was_dead=1;}
