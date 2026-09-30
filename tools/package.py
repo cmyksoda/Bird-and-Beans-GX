@@ -25,8 +25,9 @@ def package(build, out):
     ET.parse(meta)
     notices = [ROOT / 'LICENSE', *sorted((ROOT / 'licenses').glob('*.txt'))]
     out.mkdir(parents=True, exist_ok=True)
-    target = out / 'BirdBeans-Wii-BYOR.zip'
+    target = out / 'Bird-and-Beans-GX.zip'
     with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+        archive.write(ROOT / 'README.md', 'README.md')
         for path in notices:
             archive.write(path, path.relative_to(ROOT))
         archive.write(build / 'boot.dol', 'apps/birdbeans/boot.dol')

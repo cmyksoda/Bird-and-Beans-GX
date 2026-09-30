@@ -2,10 +2,13 @@
 <app version="1">
   <name>Bird &amp; Beans GX</name>
   <coder>cmyksoda</coder>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <release_date>20260929</release_date>
-  <short_description>Bird &amp; Beans / Pyoro for Wii</short_description>
-  <long_description>Native port of the DSiWare release of Bird &amp; Beans / Pyoro. Playable with with Wii Remote, Nunchuk, Classic Controller and GameCube controls. Put your supported USA .nds ROM beside boot.dol. Data is prepared automatically on first launch. Adorable Pyoro transition voices included.</long_description>
+  <short_description>Bird &amp; Beans / Pyoro for Wii!</short_description>
+  <long_description>Native port of the DSiWare release, Bird &amp; Beans / Pyoro.
+Playable with Wii Remote, Nunchuk, Classic Controller and GameCube Controller.
+Put your supported USA .nds ROM beside boot.dol. Data is prepared automatically on first launch.
+Adorable Pyoro transition voices included. &lt;3</long_description>
   <ahb_access/>
   <no_ios_reload/>
 </app>
