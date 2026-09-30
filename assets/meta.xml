@@ -2,8 +2,8 @@
 <app version="1">
   <name>Bird &amp; Beans GX</name>
   <coder>cmyksoda</coder>
-  <version>1.0.2</version>
-  <release_date>20260929</release_date>
+  <version>1.0.3</version>
+  <release_date>20260930</release_date>
   <short_description>Bird &amp; Beans / Pyoro for Wii!</short_description>
   <long_description>Native port of the DSiWare release, Bird &amp; Beans / Pyoro.
 Playable with Wii Remote, Nunchuk, Classic Controller and GameCube Controller.
