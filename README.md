@@ -33,9 +33,9 @@ In menus, select with A / 2 and go back with B. Press a button or move the stick
 
 ## Display and saves
 
-Open **Pause → Graphics Options** to toggle **240p at 60 Hz** and choose between **Fixed and Fill** scaling. Scaling applies to gameplay and pause menus. The title and loading screen always use the full screen. Fixed keeps the original proportions and picture size when switching video modes; it uses 384 lines in normal output and 192 in 240p. Your choices are saved when you leave the menu and restored on the next launch.
+Open **Pause → Graphics Options** to toggle **240p at 60 Hz** and choose between **Fixed and Fill** scaling. Scaling applies to gameplay and pause menus. The title and loading screen always use the full screen. Fixed keeps the original proportions by simply taking the original game's pixels and doubling their size. Your choices are saved when you leave the menu and restored on the next launch.
 
-Fill detects the Wii’s 4:3 or 16:9 setting. Widescreen systems also show **Aspect Ratio** for the option to use a centered 4:3 view.
+Fill detects the Wii’s 4:3 or 16:9 setting and stretches the image to fill the whole screen. Widescreen systems also show **Aspect Ratio** for the option to use a centered 4:3 view.
 
 High scores and graphics options are saved in `apps/birdbeans/scores.dat`. Scores are saved on game over, restart, return to title or a clean exit. Keep that file when updating. Powering off during a run can lose an unsaved record.
 
