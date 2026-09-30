@@ -41,8 +41,6 @@ High scores are saved in `apps/birdbeans/scores.dat` on game over, restart, retu
 
 ## License
 
-Basic play has been tested on Wii, with broader controller testing in Dolphin. Physical confirmation of 240p and controller handoff, plus vWii and PAL testing, is pending. Wii U GamePad and arbitrary USB controllers aren’t supported.
-
 The port code and documentation are **GPLv3**. Nintendo game data and the included Pyoro recordings are excluded; third-party components retain their own licenses. See [license notices](licenses/README.md).
 
 [^1]: The loading screens aren't real loading screens, they're just cute little transitions. It felt odd to have the game start instantly.
