@@ -35,7 +35,7 @@ In menus, select with A / 2 and go back with B. Press a button or move the stick
 
 Open **Pause → Graphics Options** to toggle **240p at 60 Hz** and choose between **Fixed and Fill** scaling.
 
-Fixed keeps the original proportions by simply taking the original game's pixels and doubling their size. Fill detects the Wii’s 4:3 or 16:9 setting and stretches the image to fill the whole screen. Scaling applies to gameplay and pause menus; the title and loading screens always use the full screen.
+Fixed keeps the original proportions by simply taking the original game's pixels and doubling their size. Fill detects the Wii’s 4:3 or 16:9 setting and stretches the image to fill the whole screen. Scaling applies to gameplay; menus always stay at the Fixed size, and the title and loading screens always use the full screen.
 
 Widescreen systems also show **Aspect Ratio** for the option to use a centered 4:3 view while in Fill mode.
 

@@ -9,4 +9,5 @@ void ui_pause(Game *,int);
 void ui_graphics(Game *,int);
 void ui_over(Game *);
 void ui_error(Game *,const char *);
+void ui_compose(Game *);
 #endif

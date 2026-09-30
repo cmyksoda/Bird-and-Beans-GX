@@ -14,6 +14,25 @@ static void center(Game *g,int y,const char *s,uint16_t c){text_draw(g,(256-(int
 static void arrow(Game *g,int x,int y,uint16_t c){for(int j=0;j<7;j++){int w=j<=3?j+1:7-j;rect(g,x,y+j,w,1,c);}}
 static void dim(Game *g){for(int y=8;y<184;y++)for(int x=8;x<248;x++){int i=y*WIDTH+x;unsigned c=g->pixels[i];g->pixels[i]=((c>>11)*3/8)<<11|(((c>>5)&63)*3/8)<<5|(c&31)*3/8;}}
 static void card(Game *g,int y,int h){roundbox(g,35,y+4,188,h,0x0841);roundbox(g,33,y,190,h,INK);roundbox(g,34,y+1,188,h-2,PAPER);rect(g,45,y+28,166,1,0xd653);}
+// Game colours never set green's low bit, so this can't collide with art on the card layer.
+#define CLEAR 0x0020
+static uint16_t shade[WIDTH*HEIGHT];static int layered;
+static void scale_into(uint16_t *out,const uint16_t *src,DisplayRect view,int keyed){
+    // Match the final GX sample positions, including 240p's odd source rows.
+    int sample_y=platform_240p()?0:1,source_x[640];
+    for(int x=0;x<view.w;x++)source_x[x]=(2*x+1)*WIDTH/(2*view.w);
+    for(int y=0;y<view.h;y++){
+        int sy=(2*y+sample_y)*HEIGHT/(2*view.h);uint16_t *row=out+(view.y+y)*640+view.x;
+        for(int x=0;x<view.w;x++){uint16_t c=src[sy*WIDTH+source_x[x]];if(!keyed||c!=CLEAR)row[x]=c;}
+    }
+}
+// In Fill, cards go on a clear layer that ui_compose shows at the Fixed size over the stretched game.
+static void overlay(Game *g){dim(g);layered=!platform_pixel_scale();if(!layered)return;memcpy(shade,g->pixels,sizeof(shade));for(int i=0;i<WIDTH*HEIGHT;i++)g->pixels[i]=CLEAR;}
+void ui_compose(Game *g){
+    if(!layered)return;layered=0;int wide=platform_wide(),box=platform_pillarbox();
+    game_canvas(g,CANVAS_FULLSCREEN);memset(g->menu_pixels,0,sizeof(g->menu_pixels));
+    scale_into(g->menu_pixels,shade,display_rect(wide,box,0,0),0);scale_into(g->menu_pixels,g->pixels,display_rect(wide,box,1,0),1);
+}
 static void title_center(Game *g,int y,const char *s,uint16_t c){text_draw_scaled(g,(640-(int)strlen(s)*12+2)/2,y,s,c,2);}
 static void title_logo(Game *g){
     static unsigned char coverage[TITLE_LOGO_W*TITLE_LOGO_H];
@@ -91,14 +110,7 @@ void ui_transition(Game *g,int mode,unsigned tick,int phase,float progress){
         else{
             game_render(g);
             DisplayRect view=display_rect(platform_wide(),platform_pillarbox(),platform_pixel_scale(),0);
-            memset(backdrop,0,sizeof(backdrop));
-            // Match the final GX sample positions, including 240p's odd source rows.
-            int sample_y=platform_240p()?0:1,source_x[640];
-            for(int x=0;x<view.w;x++)source_x[x]=(2*x+1)*WIDTH/(2*view.w);
-            for(int y=0;y<view.h;y++){
-                int sy=(2*y+sample_y)*HEIGHT/(2*view.h);
-                for(int x=0;x<view.w;x++)backdrop[(view.y+y)*640+view.x+x]=g->pixels[sy*WIDTH+source_x[x]];
-            }
+            memset(backdrop,0,sizeof(backdrop));scale_into(backdrop,g->pixels,view,0);
         }
         last_phase=phase;
     }
@@ -112,7 +124,7 @@ void ui_transition(Game *g,int mode,unsigned tick,int phase,float progress){
     }
 }
 void ui_pause(Game *g,int selected){
-    dim(g);int rows=4,y=25,h=144;card(g,y,h);
+    overlay(g);int rows=4,y=25,h=144;card(g,y,h);
     center(g,y+12,"PAUSED",INK);
     const char *labels[]={"CONTINUE","RESTART","GRAPHICS OPTIONS","RETURN TO TITLE"};
     for(int i=0;i<rows;i++){
@@ -124,7 +136,7 @@ void ui_pause(Game *g,int selected){
     center(g,y+h-12,"A / 2 SELECT   B BACK",MUTED);
 }
 void ui_graphics(Game *g,int selected){
-    dim(g);int wide=platform_wide(),rows=wide?4:3,y=wide?25:36,h=wide?144:121;card(g,y,h);
+    overlay(g);int wide=platform_wide(),rows=wide?4:3,y=wide?25:36,h=wide?144:121;card(g,y,h);
     center(g,y+12,"GRAPHICS OPTIONS",INK);
     const char *scale=platform_pixel_scale()?"PIXEL SCALE: FIXED":"PIXEL SCALE: FILL";
     const char *labels[]={platform_240p()?"240P MODE: ON":"240P MODE: OFF",scale,wide?(platform_pillarbox()?"ASPECT RATIO: 4:3":"ASPECT RATIO: 16:9"):"BACK","BACK"};
@@ -136,10 +148,10 @@ void ui_graphics(Game *g,int selected){
     center(g,y+h-12,"A / 2 CHANGE   B BACK",MUTED);
 }
 void ui_over(Game *g){
-    dim(g);card(g,49,94);center(g,61,"GAME OVER",INK);
+    overlay(g);card(g,49,94);center(g,61,"GAME OVER",INK);
     char s[32];snprintf(s,sizeof(s),"SCORE %06u",game_score(g));center(g,87,s,INK);
     snprintf(s,sizeof(s),"BEST  %06u",g->high[g->mode]);center(g,99,s,MUTED);
     roundbox(g,53,116,150,17,GOLD);center(g,121,"A / 2 PLAY AGAIN",INK);
     center(g,153,"HOME / Z RETURN TO TITLE",PAPER);
 }
-void ui_error(Game *g,const char *message){dim(g);card(g,47,98);center(g,60,"SOMETHING WENT WRONG",INK);text_draw(g,44,88,message,INK);center(g,126,"HOME / Z RETURN TO TITLE",INK);}
+void ui_error(Game *g,const char *message){overlay(g);card(g,47,98);center(g,60,"SOMETHING WENT WRONG",INK);text_draw(g,44,88,message,INK);center(g,126,"HOME / Z RETURN TO TITLE",INK);}

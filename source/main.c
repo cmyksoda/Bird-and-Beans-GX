@@ -141,7 +141,7 @@ int main(int argc,char **argv){
         else if(menu)ui_title(&game,mode,uiticks);
         else{game_render(&game);if(game.vm.fault)ui_error(&game,"CORE ERROR - SEE CONSOLE");else if(pause){if(graphics)ui_graphics(&game,graphics_selection);else ui_pause(&game,selection);}else if(game.dead)ui_over(&game);}
         if(save_failed)text_draw(&game,20,179,"SCORE SAVE FAILED",0xf800);
-        platform_present(&game);
+        ui_compose(&game);platform_present(&game);
         if(smoke&&total>=600){if(capture)platform_capture(capture,&game);printf("SMOKE frames=%u score=%u instructions=%u fault=%d\n",total,game_score(&game),game.vm.instructions,game.vm.fault);break;}
         if(smoke&&game.vm.fault){fprintf(stderr,"%s\n",game.vm.error);break;}
     }
