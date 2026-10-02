@@ -34,13 +34,14 @@ def package(build, out):
         archive.write(voices, 'apps/birdbeans/voices.pak')
         archive.write(ROOT / 'assets/icon.png', 'apps/birdbeans/icon.png')
         archive.write(meta, 'apps/birdbeans/meta.xml')
-        archive.writestr('INSTALL.txt',
-                        '1. Copy apps/ to the root of your SD card.\n'
-                        '2. Put your USA .nds ROM in apps/birdbeans/, beside boot.dol. Any filename is fine.\n'
-                        '3. Launch Bird & Beans GX in the Homebrew Channel.\n'
-                        'Game data is prepared automatically on first launch; unzip the ROM first if needed.\n'
-                        'Transition voices are included. Keep scores.dat when updating.\n'
-                        'Source code and build tools are available in the project repository.\n')
+        archive.writestr(
+            'INSTALL.txt',
+            '1. Copy apps/ to the root of your SD card.\n'
+            '2. Put your USA .nds ROM in apps/birdbeans/, beside boot.dol. Any filename is fine.\n'
+            '3. Launch Bird & Beans GX in the Homebrew Channel.\n'
+            'Game data is prepared automatically on first launch; unzip the ROM first if needed.\n'
+            'Transition voices are included. Keep scores.dat when updating.\n'
+            'Source code and build tools are available in the project repository.\n')
     (out / 'SHA256SUMS').write_text(
         hashlib.sha256(target.read_bytes()).hexdigest() + '  ' + target.name + '\n')
     print(target, target.stat().st_size)
