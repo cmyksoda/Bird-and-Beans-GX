@@ -48,3 +48,7 @@ High scores and graphics options are saved in `apps/birdbeans/scores.dat`. Score
 The port code and documentation are **GPLv3**. Nintendo game data and the included Pyoro recordings are excluded; third-party components retain their own licenses. See [license notices](licenses/README.md).
 
 [^1]: The loading screens aren't real loading screens, they're just cute little transitions. It felt odd to have the game start instantly.
+
+---
+
+*This project was made with AI assistance. For more information, see [my AI usage statement](https://github.com/cmyksoda/cmyksoda/blob/main/AI_USAGE.md).*
