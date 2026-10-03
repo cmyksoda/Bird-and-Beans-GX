@@ -49,6 +49,4 @@ The port code and documentation are **GPLv3**. Nintendo game data and the includ
 
 [^1]: The loading screens aren't real loading screens, they're just cute little transitions. It felt odd to have the game start instantly.
 
----
-
 *This project was made with AI assistance. For more information, see [my AI usage statement](https://github.com/cmyksoda/cmyksoda/blob/main/AI_USAGE.md).*
