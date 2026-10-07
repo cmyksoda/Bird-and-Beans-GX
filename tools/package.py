@@ -26,16 +26,18 @@ def package(build, out):
     notices = [ROOT / 'LICENSE', *sorted((ROOT / 'licenses').glob('*.txt'))]
     out.mkdir(parents=True, exist_ok=True)
     target = out / 'Bird-and-Beans-GX.zip'
+    # Shop installs extract the zip to the SD root, so everything lives in the app folder.
+    app = 'apps/birdbeans/'
     with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
-        archive.write(ROOT / 'README.md', 'README.md')
+        archive.write(ROOT / 'README.md', app + 'README.md')
         for path in notices:
-            archive.write(path, path.relative_to(ROOT))
-        archive.write(build / 'boot.dol', 'apps/birdbeans/boot.dol')
-        archive.write(voices, 'apps/birdbeans/voices.pak')
-        archive.write(ROOT / 'assets/icon.png', 'apps/birdbeans/icon.png')
-        archive.write(meta, 'apps/birdbeans/meta.xml')
+            archive.write(path, app + path.relative_to(ROOT).as_posix())
+        archive.write(build / 'boot.dol', app + 'boot.dol')
+        archive.write(voices, app + 'voices.pak')
+        archive.write(ROOT / 'assets/icon.png', app + 'icon.png')
+        archive.write(meta, app + 'meta.xml')
         archive.writestr(
-            'INSTALL.txt',
+            app + 'INSTALL.txt',
             '1. Copy apps/ to the root of your SD card.\n'
             '2. Put your USA .nds ROM in apps/birdbeans/, beside boot.dol. Any filename is fine.\n'
             '3. Launch Bird & Beans GX in the Homebrew Channel.\n'
