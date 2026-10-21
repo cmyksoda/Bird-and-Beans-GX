@@ -45,9 +45,18 @@ All graphics options are saved when you leave the menu and restored on the next 
 
 High scores and graphics options are saved in `apps/birdbeans/scores.dat`. Scores are saved on game over, restart, return to title or a clean exit. Keep that file when updating. Powering off during a run can lose an unsaved record.
 
+## Credits
+
+- **Bird & Beans / Pyoro** by Nintendo, the games this port runs, read from your own DSiWare ROM
+- **The Pyoro voice recordings** by Nintendo / Intelligent Systems, from WarioWare: Get It Together!, submitted by Mysticus to [The Sounds Resource](https://sounds.spriters-resource.com/nintendo_switch/wariowaregetittogether/asset/437608/), with the [101soundboards Pyoro voice board](https://www.101soundboards.com/boards/1602811-warioware-get-it-together-nintendo-switch-pyoro-voice) as a reference
+- **SSEQPlayer** by Naram Qashat (CyberBotX), from [kode54's repository](https://github.com/kode54/SSEQPlayer) and adapted from fincs's [FeOS Sound System](https://github.com/fincs/FSS), for playing the game's music and sound effects
+- **ndspy** by RoadrunnerWMC, the reference for the ROM's LZ10 and backward ARM9 decompression; ndspy credits DSDecmp and NSMBe/Elitemap for those
+- **libogc** by Michael Wiedenbauer (shagkur) and Dave Murphy (WinterMute), with **libfat** by Michael "Chishm" Chisholm for the SD card, **ASND** by Hermes for sound, and **wiiuse** for the Wii Remote, from devkitPro's libraries
+- **devkitPPC** by devkitPro, with **newlib** and the **GCC runtime library**
+
 ## License
 
-The port code and documentation are **GPLv3**. Nintendo game data and the included Pyoro recordings are excluded; third-party components retain their own licenses. See [license notices](licenses/README.md).
+The port code and documentation are free software under the [GNU General Public License, version 3](LICENSE). Some parts use other licenses: SSEQPlayer is WTFPL version 2, the decompression code adapted from ndspy is GPL version 3 or later (used here under version 3), and the other third-party components retain their own licenses. Nintendo game data and the included Pyoro recordings are excluded. All the texts are in [`licenses/`](licenses/), and the [license notices](licenses/README.md) say which applies where.
 
 [^1]: The loading screens aren't real loading screens, they're just cute little transitions. It felt odd to have the game start instantly.
 
