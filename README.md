@@ -56,7 +56,7 @@ High scores and graphics options are saved in `apps/birdbeans/scores.dat`. Score
 
 ## License
 
-The port code and documentation are free software under the [GNU General Public License, version 3](LICENSE). Some parts use other licenses: SSEQPlayer is WTFPL version 2, the decompression code adapted from ndspy is GPL version 3 or later (used here under version 3), and the other third-party components retain their own licenses. Nintendo game data and the included Pyoro recordings are excluded. All the texts are in [`licenses/`](licenses/), and the [license notices](licenses/README.md) say which applies where.
+The port code and documentation are free software under the [GNU General Public License, version 3 or later](LICENSE). Some parts use other licenses: SSEQPlayer is WTFPL version 2, the decompression code adapted from ndspy is GPL version 3 or later, and the other third-party components retain their own licenses. Nintendo game data and the included Pyoro recordings are excluded. All the texts are in [`licenses/`](licenses/), and the [license notices](licenses/README.md) say which applies where.
 
 [^1]: The loading screens aren't real loading screens, they're just cute little transitions. It felt odd to have the game start instantly.
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: GPL-3.0-only
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Package the Wii app and license notices for installation on an SD card."""
 import argparse
 import hashlib

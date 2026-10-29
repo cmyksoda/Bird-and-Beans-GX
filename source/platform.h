@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: GPL-3.0-or-later
 #ifndef BB_PLATFORM_H
 #define BB_PLATFORM_H
 #include "audio.h"

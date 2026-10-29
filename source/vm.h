@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: GPL-3.0-or-later
 #ifndef BB_VM_H
 #define BB_VM_H
 #include <stdint.h>

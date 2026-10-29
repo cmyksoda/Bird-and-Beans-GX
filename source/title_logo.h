@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: GPL-3.0-or-later
 // Cropped artwork supplied by jaxi; run-length encoded grayscale.
 #define TITLE_LOGO_W 576
 #define TITLE_LOGO_H 64

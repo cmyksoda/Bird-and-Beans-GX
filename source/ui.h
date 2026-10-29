@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: GPL-3.0-or-later
 #ifndef BB_UI_H
 #define BB_UI_H
 #include "platform.h"

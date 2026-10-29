@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: GPL-3.0-or-later
 // Decompression format reference: ndspy, Copyright 2019 RoadrunnerWMC.
 // See licenses/ndspy.txt for upstream attribution and terms.
 #include "rom.h"
