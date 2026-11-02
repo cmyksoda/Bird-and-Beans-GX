@@ -3,11 +3,14 @@ DEVKITPPC ?= $(DEVKITPRO)/devkitPPC
 BUILD ?= $(HOME)/.cache/birdbeans-build
 COMMON = source/vm.c source/game.c source/render.c source/ui.c source/rom.c source/input.c source/main.c
 AUDIO = source/audio.cpp $(wildcard source/sseq/*.cpp)
-HEADERS = $(wildcard source/*.h source/sseq/*.h)
+HEADERS = $(wildcard source/*.h source/sseq/*.h source/libwiiinput/*.h)
 WARN = -Wall -Wextra -Wno-misleading-indentation -Wno-sign-compare -Wno-implicit-fallthrough
 WFLAGS = -DGEKKO -DHW_RVL -mrvl -mcpu=750 -meabi -mhard-float -O2 $(WARN) -I$(DEVKITPRO)/libogc/include
 WLIBS = -L$(DEVKITPRO)/libogc/lib/wii -lasnd -lfat -lwiiuse -lbte -logc -lm
-WOBJ = $(patsubst %.c,$(BUILD)/wii/%.o,$(COMMON) source/platform_wii.c) $(patsubst %.cpp,$(BUILD)/wii/%.o,$(AUDIO))
+
+# GameCube controller adapter for Wii U: folded onto the PAD_* calls the program already makes (see source/libwiiinput/extrainput.h)
+WFLAGS += -DHAVE_GCADAPTER -Isource/libwiiinput -include extrainput_compat.h
+WOBJ = $(patsubst %.c,$(BUILD)/wii/%.o,$(COMMON) source/platform_wii.c $(wildcard source/libwiiinput/*.c)) $(patsubst %.cpp,$(BUILD)/wii/%.o,$(AUDIO))
 HOBJ = $(patsubst %.c,$(BUILD)/host/%.o,$(COMMON) source/platform_host.c) $(patsubst %.cpp,$(BUILD)/host/%.o,$(AUDIO))
 .PHONY: all wii host full FORCE
 all: wii

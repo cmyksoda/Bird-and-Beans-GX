@@ -61,3 +61,7 @@ The port code and documentation are free software under the [GNU General Public 
 [^1]: The loading screens aren't real loading screens, they're just cute little transitions. It felt odd to have the game start instantly.
 
 *This project was made with AI assistance. For more information, see [my AI usage statement](https://github.com/cmyksoda/cmyksoda/blob/main/AI_USAGE.md).*
+
+## GameCube controller adapter
+
+The GameCube controller adapter for Wii U (and third-party ones that copy it) works: its four ports read as GameCube pads, rumble aside. The driver is from [libwiiinput](https://github.com/quatric/libwiiinput) and lives in `source/libwiiinput/`; `extrainput_compat.h` wraps the program's own `PAD_*` calls, so no input code in the program had to change. Those files are GPL-3.0-or-later like the rest of the port.
