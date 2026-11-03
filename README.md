@@ -33,6 +33,10 @@ Cute Pyoro transition voices are included for the loading[^1] screens. :3
 
 In menus, select with A / 2 and go back with B. Press a button or move the stick on another controller to switch all controls to it, including during play.
 
+## GameCube controller adapter
+
+The GameCube controller adapter for Wii U (and third-party ones that copy it) works: its four ports read as GameCube controllers. The driver is from [libwiiinput](https://github.com/quatric/libwiiinput) and lives in `source/libwiiinput/`.
+
 ## Display and saves
 
 Open **Pause → Graphics Options** to toggle **240p at 60 Hz** and choose between **Fixed and Fill** scaling.
@@ -51,6 +55,7 @@ High scores and graphics options are saved in `apps/birdbeans/scores.dat`. Score
 - **The Pyoro voice recordings** by Nintendo / Intelligent Systems, from WarioWare: Get It Together!, submitted by Mysticus to [The Sounds Resource](https://sounds.spriters-resource.com/nintendo_switch/wariowaregetittogether/asset/437608/), with the [101soundboards Pyoro voice board](https://www.101soundboards.com/boards/1602811-warioware-get-it-together-nintendo-switch-pyoro-voice) as a reference
 - **SSEQPlayer** by Naram Qashat (CyberBotX), from [kode54's repository](https://github.com/kode54/SSEQPlayer) and adapted from fincs's [FeOS Sound System](https://github.com/fincs/FSS), for playing the game's music and sound effects
 - **ndspy** by RoadrunnerWMC, the reference for the ROM's LZ10 and backward ARM9 decompression; ndspy credits DSDecmp and NSMBe/Elitemap for those
+- **libwiiinput** by quatric, from [its repository](https://github.com/quatric/libwiiinput), for the GameCube controller adapter for Wii U, with the adapter driver from [RiftWii](https://github.com/KakarottoCake/Riftwii) by the RiftWii contributors; RiftWii credits Alex Chadwick's [wup-028-bslug](https://github.com/Chadderz121/wup-028-bslug) and FIX94's [Nintendont](https://github.com/FIX94/Nintendont) and its contributors for it
 - **libogc** by Michael Wiedenbauer (shagkur) and Dave Murphy (WinterMute), with **libfat** by Michael "Chishm" Chisholm for the SD card, **ASND** by Hermes for sound, and **wiiuse** for the Wii Remote, from devkitPro's libraries
 - **devkitPPC** by devkitPro, with **newlib** and the **GCC runtime library**
 
@@ -61,7 +66,3 @@ The port code and documentation are free software under the [GNU General Public 
 [^1]: The loading screens aren't real loading screens, they're just cute little transitions. It felt odd to have the game start instantly.
 
 *This project was made with AI assistance. For more information, see [my AI usage statement](https://github.com/cmyksoda/cmyksoda/blob/main/AI_USAGE.md).*
-
-## GameCube controller adapter
-
-The GameCube controller adapter for Wii U (and third-party ones that copy it) works: its four ports read as GameCube pads, rumble aside. The driver is from [libwiiinput](https://github.com/quatric/libwiiinput) and lives in `source/libwiiinput/`; `extrainput_compat.h` wraps the program's own `PAD_*` calls, so no input code in the program had to change. Those files are GPL-3.0-or-later like the rest of the port.
