@@ -38,6 +38,7 @@
 #define HID_TIMEOUT_MS 1500 /* a USB module that does not answer turns the adapter off */
 #define ERROR_LINES 12      /* a failure repeating every second is logged this often */
 #define VERSION_BYTES 32
+#define IPC_BLOCK(n) ((((n) + 31) & ~31u) + 32 + 8)
 #define LIST_BYTES 0x180    /* v5's device list */
 
 static int (*log_print)(const char *fmt, ...);
@@ -107,8 +108,9 @@ static bool buffers(void)
 {
     if (state)
         return true;
+    /* libogc's heap charges every block a 32-byte page and an 8-byte header on top of its size, and keeps 8 bytes */
     if (heap < 0)
-        heap = iosCreateHeap((sizeof(gcad) + VERSION_BYTES + 64 + 31) & ~31u);
+        heap = iosCreateHeap((IPC_BLOCK(sizeof(gcad)) + IPC_BLOCK(VERSION_BYTES) + 8 + 31) & ~31u);
     if (heap < 0)
         return false;
     state = iosAlloc(heap, sizeof(gcad));
