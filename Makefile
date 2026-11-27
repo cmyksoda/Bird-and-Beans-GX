@@ -5,8 +5,8 @@ COMMON = source/vm.c source/game.c source/render.c source/ui.c source/rom.c sour
 AUDIO = source/audio.cpp $(wildcard source/sseq/*.cpp)
 HEADERS = $(wildcard source/*.h source/sseq/*.h source/libwiiinput/*.h)
 WARN = -Wall -Wextra -Wno-misleading-indentation -Wno-sign-compare -Wno-implicit-fallthrough
-WFLAGS = -DGEKKO -DHW_RVL -mrvl -mcpu=750 -meabi -mhard-float -O2 $(WARN) -I$(DEVKITPRO)/libogc/include
-WLIBS = -L$(DEVKITPRO)/libogc/lib/wii -lasnd -lfat -lwiiuse -lbte -logc -lm
+WFLAGS = -DGEKKO -DHW_RVL -mrvl -mcpu=750 -meabi -mhard-float -O2 $(WARN) -I$(DEVKITPRO)/libogc2/wii/include
+WLIBS = -L$(DEVKITPRO)/libogc2/wii/lib -lasnd -lfat -lwiiuse -lbte -logc -lm
 
 # GameCube controller adapter for Wii U: folded onto the PAD_* calls the program already makes (see source/libwiiinput/extrainput.h)
 WFLAGS += -DHAVE_GCADAPTER -Isource/libwiiinput -include extrainput_compat.h

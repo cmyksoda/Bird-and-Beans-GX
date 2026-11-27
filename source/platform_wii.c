@@ -23,9 +23,7 @@ static int audio_started;
 static uint64_t audio_completed, audio_segment_frames;
 static int audio_pending = -1;
 
-static void reset(u32 a, void *b) {
-    (void)a;
-    (void)b;
+static void reset(void) {
     quit = 1;
 }
 
