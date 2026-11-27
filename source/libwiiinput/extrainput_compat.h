@@ -22,10 +22,10 @@ static inline void ExtraInput_PADInit(void)
 	ExtraInput_Init();
 }
 
-static inline s32 ExtraInput_WPADShutdown(void)
+static inline void ExtraInput_WPADShutdown(void)
 {
 	ExtraInput_Shutdown();
-	return WPAD_Shutdown();
+	WPAD_Shutdown(); // void in libogc2
 }
 
 #define PAD_Init()                   ExtraInput_PADInit()
